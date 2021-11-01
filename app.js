@@ -1,11 +1,9 @@
-const app = require("express")();
+const http = require('http')
+const fs = require('fs')
 
-const PORT = process.env.PORT || 3000;
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'content-type': 'text/html' })
+  fs.createReadStream('hello.html').pipe(res)
+})
 
-app.get("", (req, res) => {
-	res.send("Hello world");
-});
-
-app.listen(PORT, () => {
-	console.log('APP up at port ${PORT}');
-});
+server.listen(process.env.PORT || 3000)
