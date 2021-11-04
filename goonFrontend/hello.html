@@ -5,15 +5,15 @@
   <br><br>
 </form>
   
-<button type="submit" onclick="yerr()">Submit</button>
+<button type="submit" onclick="userAction()">Submit</button>
 <button type="submit" onclick="yerr()">yerr</button>
 
 <script>
-  // const userAction = async () => {
-  // const response = await fetch('https://goon-backend.herokuapp.com/');
-  // const myJson = await response.json();
-  // console.log(myJson)
-  // }
+  const userAction = async () => {
+  const response = await fetch('https://goon-backend.herokuapp.com/');
+  const myJson = await response.json();
+  console.log(myJson)
+  }
 
   function yerr() {
     console.log("yerr")
