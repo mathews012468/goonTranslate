@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-api": "cd goonBackend && venv/bin/python wsgi.py",
     "start": "node goonFrontend/app.js"
   },
   "repository": {
@@ -21,6 +20,5 @@
   "homepage": "https://github.com/mathews012468/goonTranslate#readme",
   "dependencies": {
     "express": "^4.17.1"
-  },
-  "proxy": "http://localhost:5000"
+  }
 }
